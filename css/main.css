@@ -68,19 +68,24 @@ h2 {
 	margin: 0;
 	padding: 0;
 	height: 5fr;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
 }
 
 .grid-container{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
-	grid-column-gap: 10;
+	grid-column-gap: 5%;
 	grid-row-gap: 10;
 }
 
 .grid-item{
 	height: 5%;
-
+	object-fit: cover;
+	width: 100%;
+	height: auto;
 }
 
 .skip{
