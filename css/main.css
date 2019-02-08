@@ -21,19 +21,14 @@ footer {
 	text-align: center;
 }
 
-.topnav {
-    list-style-type: none;
-    margin: 1%;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(36, 36, 36);
-    /* border: 1px solid #e7e7e7; */
-}
-  
-li {
-	float: left;
-}
-  
+/*mobile*/
+.topnav li.a, li, .rightnav {
+	float: none;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: rgb(36, 36, 36);
+}  
+
 li a {
     display: block;
     color: whitesmoke;
@@ -126,9 +121,6 @@ h2 {
 	width: 25%;
 }
 /*****too many classes*****/
-.rightnav {
-	float: right;
-}
 
 #blockm {
 	margin: 3%;	
@@ -137,8 +129,25 @@ h2 {
 	width: 300px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 680px) {
+	.topnav {
+		list-style-type: none;
+		margin: 1%;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(36, 36, 36);
+		/* border: 1px solid #e7e7e7; */
+	}
+	li {
+		float: left;
+	}
+	.rightnav {
+		float: right;
+	}
+}
+
+  /* @media screen and (min-width: 1200px) {
 	.topnav li.a, li, .rightnav {
 		float: none;
 	}
-  }
+  } */
