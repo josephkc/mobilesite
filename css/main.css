@@ -21,11 +21,6 @@ footer {
 	text-align: center;
 }
 
-img {
-	margin: 1% 10%;
-	padding: 5%;
-}
-
 .topnav {
     list-style-type: none;
     margin: 1%;
@@ -70,16 +65,22 @@ h2 {
 }
 
 .poster {
-	float: left;
 	margin: 0;
 	padding: 0;
+	height: 5fr;
 }
 
-.sec{
-	display: flex;
-	margin: 2%;
-	height: 200px;
-	width: 90%;
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	grid-column-gap: 10;
+	grid-row-gap: 10;
+}
+
+.grid-item{
+	height: 5%;
+
 }
 
 .skip{
@@ -104,7 +105,7 @@ h2 {
 	height: 200px;
 	width: 100%;
 }
-
+/*****figure this out*****/
 .shortsec {
 	display: flex;
 	margin: 0% 0% 0% 3%;
@@ -119,7 +120,7 @@ h2 {
 	margin: 1%;
 	width: 25%;
 }
-
+/*****too many classes*****/
 .rightnav {
 	float: right;
 }
