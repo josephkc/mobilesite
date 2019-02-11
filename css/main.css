@@ -50,15 +50,6 @@ p {
     margin: 1%;
 }
 
-h2 {
-	font-size: 20px;
-	position: relative;
-	margin: 2%;
-	top: 2%;
-	left: 1%;
-	width: 100%;
-}
-
 .poster {
 	margin: 0;
 	padding: 0;
@@ -93,18 +84,30 @@ h2 {
 }
 
 .project_description {
-	display: block;
     color: black;
 	line-height: 1.2;
-	width: 60%;
+	width: 80%;
+	margin-left: 5%;
 }
 
-.projectsec {
+.flex-container {
 	display: flex;
-	margin: 5%;
-	height: 200px;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	margin: 2% 0% 2%;
 	width: 100%;
 }
+
+.project-pic {
+	width: 90%;
+	margin: 5%;
+}
+
 /*****figure this out*****/
 .shortsec {
 	display: flex;
@@ -117,8 +120,8 @@ h2 {
 }
 
 .moviedesc {
-	margin: 1%;
-	width: 25%;
+	margin: 5%;
+	width: 80%;
 }
 /*****too many classes*****/
 
@@ -128,6 +131,7 @@ h2 {
 	height: 200px;
 	width: 300px;
 }
+
 
 @media only screen and (min-width: 530px) {
 	.topnav {
@@ -143,10 +147,35 @@ h2 {
 	.rightnav {
 		float: right;
 	}
+
+	.project_description {
+		width: 100%;
+		margin-left: 5%;
+	}
+	.project-pic {
+		width: 70%;
+	}
 }
 
-  /* @media screen and (min-width: 1200px) {
-	.topnav li.a, li, .rightnav {
-		float: none;
+@media only screen and (min-width: 800px) {
+	.flex-container {
+		flex-direction: row;
 	}
-  } */
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (min-width: 1275px) {
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+#bottom-footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
