@@ -103,35 +103,28 @@ h2 {
 	width: 100%;
 }
 
-.project-pic {
+.picture {
 	width: 90%;
 	margin: 5%;
 }
 
-/*****figure this out*****/
-.shortsec {
-	display: flex;
-	margin: 0% 0% 0% 3%;
-}
-
-.shortdesc {
-	display: flex;
-	width: 50%
+.paragraph {
+	margin: 5%;
+	width: 90%
 }
 
 .moviedesc {
 	margin: 5%;
 	width: 80%;
 }
-/*****too many classes*****/
 
 #blockm {
+	display: none;
 	margin: 3%;	
 	padding: 3%;
 	height: 200px;
 	width: 300px;
 }
-
 
 @media only screen and (min-width: 530px) {
 	.topnav {
@@ -152,7 +145,7 @@ h2 {
 		width: 100%;
 		margin-left: 5%;
 	}
-	.project-pic {
+	.picture {
 		width: 70%;
 	}
 }
@@ -164,18 +157,31 @@ h2 {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
+	#blockm {
+		display: flex;
+	}
+	.picture {
+		width: 90%;
+	}
+	.paragraph {
+		width: 70vh;
+	}
 }
 
-@media only screen and (min-width: 1275px) {
+@media only screen and (min-width: 1200px) {
 	.grid-container {
 		grid-template-columns: repeat(4, 1fr);
+	}
+	.picture {
+		width: 70%;
 	}
 }
 
 #bottom-footer {
-    position: absolute;
-    left: 50%;
+    position: relative;
+    left: 0;
     bottom: 0;
     height: 100px;
-    width: 100%;
+	width: 100%;
+	margin-bottom: -2px;
 }
